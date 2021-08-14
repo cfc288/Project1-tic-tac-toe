@@ -16,10 +16,8 @@
 
     <h1>Tic-Tac-Toe</h1>
     <div>
-        <div class='display-board'></div>
+        <div class='display-board' id="player-display">Whose is going first?</div>
 
-       
-        <h2>Whose turn is it?</h2>
 
         <div class='players'>
             <div id='playero'>Player O</div>    
@@ -28,9 +26,9 @@
             
         </div>
         
-        <h4>3 in a row wins!</h4>
+        <h4 id='directions'>3 in a row wins!</h4>
         <h3 id="player-turn-display"></h3>
-        <div id='reset' class='resetbutton' onclick="reload()">Clear Board</div>
+        
     </div>
 
     <div class='board'>
@@ -56,6 +54,7 @@
 
     </div>
 
+    <div id='reset' class='resetbutton' onclick="reload()">Reset Board</div>
 
   </body>
 </html>
