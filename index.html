@@ -17,11 +17,20 @@
     <h1>Tic-Tac-Toe</h1>
     <div>
         <div class='display-board'></div>
-        <div id='player-turn'><h2>It is Player 'X's turn</h2>
-        <h3>Player X click to choose your spot</h3>
-        <h4>3 in a row wins!</h4>
+
+       
+        <h2>Whose turn is it?</h2>
+
+        <div class='players'>
+            <div id='playero'>Player O</div>    
+            <div id='playerx'>Player X</div>
+                
+            
         </div>
         
+        <h4>3 in a row wins!</h4>
+        <h3 id="player-turn-display"></h3>
+        <div id='reset' class='resetbutton' onclick="reload()">Clear Board</div>
     </div>
 
     <div class='board'>
