@@ -12,7 +12,10 @@ function playClick() {
     click.play();
 }
 
-//========O
+//=========================================
+
+
+//=====    O   =====
 
 const buttonPlayer1 = document.querySelector("#playero")
 
@@ -245,129 +248,178 @@ function reload() {
 
 const checkWin = window.setInterval(function(){
     //row 1 for X
-    if (document.getElementById("row1-col1").innerHTML && document.getElementById("row1-col2").innerHTML && document.getElementById("row1-col3").innerHTML == "X") {
+    if (document.getElementById("row1-col1").innerHTML == "X" && document.getElementById("row1-col2").innerHTML  == "X" && document.getElementById("row1-col3").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
-
+        //change colors to indicate where win occurred
+        document.querySelector('#row1-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row1-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row1-col3').style.backgroundColor = 'yellow'
+        
+        
     }
 
     //row 2 for X
-    else if (document.getElementById("row2-col1").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row2-col3").innerHTML == "X") {
+    else if (document.getElementById("row2-col1").innerHTML  == "X" && document.getElementById("row2-col2").innerHTML == "X" && document.getElementById("row2-col3").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row2-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col3').style.backgroundColor = 'yellow'
 
     }
 
     //row 3 for X
-    else if (document.getElementById("row3-col1").innerHTML && document.getElementById("row3-col2").innerHTML && document.getElementById("row3-col3").innerHTML == "X") {
+    else if (document.getElementById("row3-col1").innerHTML == "X" && document.getElementById("row3-col2").innerHTML == "X" && document.getElementById("row3-col3").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row3-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col3').style.backgroundColor = 'yellow'
 
     }
 
     //column 1 for X
-    else if (document.getElementById("row1-col1").innerHTML && document.getElementById("row2-col1").innerHTML && document.getElementById("row3-col1").innerHTML == "X") {
+    else if (document.getElementById("row1-col1").innerHTML == "X" && document.getElementById("row2-col1").innerHTML == "X" && document.getElementById("row3-col1").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col1').style.backgroundColor = 'yellow'
 
     }
 
     //column 2 for x
-    else if (document.getElementById("row1-col2").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row3-col2").innerHTML == "X") {
+    else if (document.getElementById("row1-col2").innerHTML == "X" && document.getElementById("row2-col2").innerHTML == "X" && document.getElementById("row3-col2").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col2').style.backgroundColor = 'yellow'
 
     }
 
     //column 3 for x
-    else if (document.getElementById("row1-col3").innerHTML && document.getElementById("row2-col3").innerHTML && document.getElementById("row3-col3").innerHTML == "X") {
+    else if (document.getElementById("row1-col3").innerHTML == "X" && document.getElementById("row2-col3").innerHTML == "X" && document.getElementById("row3-col3").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col3').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col3').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col3').style.backgroundColor = 'yellow'
 
     }
 
     //diagnol 1 for x
-    else if (document.getElementById("row1-col1").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row3-col3").innerHTML == "X") {
+    else if (document.getElementById("row1-col1").innerHTML == "X" && document.getElementById("row2-col2").innerHTML == "X" && document.getElementById("row3-col3").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col3').style.backgroundColor = 'yellow'
 
     }
 
     //diagnol 2 for X
-    else if (document.getElementById("row1-col3").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row3-col1").innerHTML == "X") {
+    else if (document.getElementById("row1-col3").innerHTML == "X" && document.getElementById("row2-col2").innerHTML == "X" && document.getElementById("row3-col1").innerHTML == "X") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player X Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col3').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col1').style.backgroundColor = 'yellow'
     }
 
     //row 1 for O
-    if (document.getElementById("row1-col1").innerHTML && document.getElementById("row1-col2").innerHTML && document.getElementById("row1-col3").innerHTML == "O") {
+    if (document.getElementById("row1-col1").innerHTML == "O" && document.getElementById("row1-col2").innerHTML == "O" && document.getElementById("row1-col3").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row1-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row1-col3').style.backgroundColor = 'yellow'
 
     }
 
     //row 2 for O
-    else if (document.getElementById("row2-col1").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row2-col3").innerHTML == "O") {
+    else if (document.getElementById("row2-col1").innerHTML == "O" && document.getElementById("row2-col2").innerHTML == "O" && document.getElementById("row2-col3").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row2-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col3').style.backgroundColor = 'yellow'
 
     }
 
     //row 3 for O
-    else if (document.getElementById("row3-col1").innerHTML && document.getElementById("row3-col2").innerHTML && document.getElementById("row3-col3").innerHTML == "O") {
+    else if (document.getElementById("row3-col1").innerHTML == "O" && document.getElementById("row3-col2").innerHTML == "O" && document.getElementById("row3-col3").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
-
+        document.querySelector('#row3-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col3').style.backgroundColor = 'yellow'
     }
 
     //column 1 for O
-    else if (document.getElementById("row1-col1").innerHTML && document.getElementById("row2-col1").innerHTML && document.getElementById("row3-col1").innerHTML == "O") {
+    else if (document.getElementById("row1-col1").innerHTML == "O" && document.getElementById("row2-col1").innerHTML == "O" && document.getElementById("row3-col1").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col1').style.backgroundColor = 'yellow'
 
     }
 
     //column 2 for O
-    else if (document.getElementById("row1-col2").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row3-col2").innerHTML == "O") {
+    else if (document.getElementById("row1-col2").innerHTML == "O" && document.getElementById("row2-col2").innerHTML == "O" && document.getElementById("row3-col2").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col2').style.backgroundColor = 'yellow'
 
     }
 
     //column 3 for O
-    else if (document.getElementById("row1-col3").innerHTML && document.getElementById("row2-col3").innerHTML && document.getElementById("row3-col3").innerHTML == "O") {
+    else if (document.getElementById("row1-col3").innerHTML == "O" && document.getElementById("row2-col3").innerHTML == "O" && document.getElementById("row3-col3").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col3').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col3').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col3').style.backgroundColor = 'yellow'
 
     }
 
     //diagnol 1 for O
-    else if (document.getElementById("row1-col1").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row3-col3").innerHTML == "O") {
+    else if (document.getElementById("row1-col1").innerHTML == "O" && document.getElementById("row2-col2").innerHTML == "O" && document.getElementById("row3-col3").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row1-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row3-col3').style.backgroundColor = 'yellow'
 
     }
 
     //diagnol 2 for O
-    else if (document.getElementById("row1-col3").innerHTML && document.getElementById("row2-col2").innerHTML && document.getElementById("row3-col1").innerHTML == "O") {
+    else if (document.getElementById("row1-col3").innerHTML == "O" && document.getElementById("row2-col2").innerHTML == "O" && document.getElementById("row3-col1").innerHTML == "O") {
         winPlay();
         document.getElementById("directions").innerHTML = "Player O Wins!" 
         window.clearInterval(checkWin)
+        document.querySelector('#row3-col1').style.backgroundColor = 'yellow'
+        document.querySelector('#row2-col2').style.backgroundColor = 'yellow'
+        document.querySelector('#row1-col3').style.backgroundColor = 'yellow'
     }
 
    
