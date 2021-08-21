@@ -1,11 +1,11 @@
 body{
-    background-image: src('Untitled.jpg');
-    color: chartreuse;
+    background-image: url('../soundbytes/Untitled.jpg');
+    color: #7fff00;
 }
 
 
 html { 
-    background: url('/Users/carmencastro/Desktop/sei-bromeliad/projects/project1/Project1-tic-tac-toe/Untitled.jpg') no-repeat center center fixed; 
+    background: url('../soundbytes/Untitled.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

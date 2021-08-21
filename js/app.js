@@ -32,12 +32,12 @@ const c9 = document.querySelector("#row3-col3")
 //================================
 
 function winPlay(){
-    let winAudio = new Audio("sound bytes/winsound.wav");
+    let winAudio = new Audio("soundbytes/winsound.wav");
     winAudio.play();
 }
 
 function playClick() {
-    let click = new Audio("sound bytes/click.wav");
+    let click = new Audio("soundbytes/click.wav");
     click.play();
 }
 
